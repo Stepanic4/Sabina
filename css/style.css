@@ -1,0 +1,356 @@
+/*************************************************************  FONT  **************************************************/
+
+@font-face {
+	font-family: ballpark;
+	src: url(../fonts/ballpark.ttf);
+}
+
+/*****************************************************     GENERAL STYLES      *********************************************/
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0 20px 0 20px;
+}
+
+a:link { 
+	text-decoration: none;
+}
+
+:focus {
+	outline:none !important;
+}
+
+.row {
+	margin: 0;
+}
+
+.container {
+	padding-left: 0;
+}
+
+/*****************************************************  HEADER    ***********************************************/
+
+/***************************************************     TOP BLOCK     ******************************************/
+
+header {
+	padding: 20px 0 15px 0;
+}
+
+header ul li a {
+	padding-left: 10px;
+}
+
+.entry a {
+	padding-left: 0;
+}
+
+.fa:before {
+	padding-right: 5px;
+}
+
+
+/***************************************************** LOGO  **************************************************/
+
+.logo  h1 a{
+	font-size: 2em;
+	color: #E814EC;
+	font-family: ballpark;
+}
+
+.logo h1 a:hover {
+	color: #008DE5;
+	transition: 0.9s;
+}
+
+.logo {
+	border-radius: 10px;
+	background: linear-gradient(to top, #9A9A9A 0%, #D8D8D8 36%, #AEAEAE 100%); 
+}
+
+/***************************************************** NAV  **************************************************/
+
+
+nav a {
+	padding-left: 5px;
+	font-weight: 600;
+}
+
+nav {
+	padding: 20px 0 40px 0;
+	background-image: url(../images/);
+}
+
+nav a:hover {
+	color: #FF00FD;
+	transition: 0.5s;
+}
+
+.form-search {
+	position: relative;
+}
+
+.form-search input {
+	max-width: 100%;
+	height: 27px;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
+}
+
+.form-search button {
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: -10px;
+	top: 0;
+}
+
+.form-search .fa {
+	display: block;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	line-height: 27px;
+	color: #24b6e2;
+}
+
+.form-search .fa:hover {
+	right: -13px;
+	color: #3F45FF;
+	font-size: 20px;
+	transition: .3s;
+}
+
+/***************************************************** CAROUSEL  **************************************************/
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+	display: block;
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel {
+	position: relative;
+	max-width: 650px;
+}
+
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+	left: 75px;
+}
+
+.carousel-caption p {
+	padding-right: 70px;
+	font-size: 20px;
+	color: #FF96DE;
+}
+
+.carousel-control.right {
+	border-radius: 0 20px 20px 0;
+}
+
+.carousel-control.left {
+	border-radius: 20px 0 0 20px;
+}
+
+/************************************************** THUMBNAIL ************************************************************/
+
+.thumbnail {
+	padding: 4px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	background: linear-gradient(to left, #9A9A9A 0%, #D8D8D8 46%, #AEAEAE 100%);
+}
+
+.thumbnail img {
+	display: block;
+	max-width: 100%;
+	max-height: 345px;
+	border-radius: 5px;
+}
+
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+
+/*************************************************   MENU (MENU-LOGO)    *********************************************/
+
+.second-logo {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	background: linear-gradient(to bottom left, #9A9A9A 0%, #D8D8D8 36%, #AEAEAE 100%);
+}
+
+.big-foto {
+	display: inline-block;
+	width: 180px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+.big-foto .mask, .big-foto .content {
+	width: 180px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0
+}
+
+.big-foto img {
+	width: 200px;
+	position: relative
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+
+.big-foto p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	padding: 10px 0 5px 10px;
+}
+
+.big-foto a {
+	display: inline-block
+	text-transform: uppercase;
+	position: relative;
+	color: #24BAE6;
+	transition: all 0.5s linear;
+	opacity: 0;
+	top: -50px;
+	text-decoration: none;
+	padding: 7px 14px;
+	color: #fff;
+	box-shadow: 0 0 1px #000;
+}
+
+.big-foto a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background: linear-gradient(to bottom right, #BDBDBD 20%, #969696 76%, #AEAEAE 100%);
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #000
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.5s linear;
+	border-radius: 10px;
+}
+
+.big-foto a.info:hover {
+	box-shadow: 0 0 5px #000;
+}
+
+.big-foto .mask {
+	/*background-image: url(../images/blouse3.png);*/
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.big-foto:hover .mask {
+	opacity: 1;
+}
+
+.big-foto:hover a.info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.more {
+	margin-left: 30px;
+	margin-right: 30px;
+	border-bottom: 1px solid #D4D4D4;
+	border-top: 1px solid #D4D4D4;
+	padding: 30px 0;
+	font-size: 18px;
+}
+
+.more a {
+	color: gray;
+}
+
+/************************************************************* SUBSCRIPTION  ***********************************************/
+
+.subscription {
+	color: red;
+	line-height: 3;
+	background-color: #22CCCC;
+	border-radius: 20px;
+}
+
+.input-group {
+    max-width: 500px;
+    padding: 30px 0 0 0;
+    border-radius: 20px;
+}
+
+.input-group button {
+    border-radius: 10px;
+}
+
+.input-group input {
+    border-radius: 10px;
+}
+
+.subscription img {
+	max-width: 150px;
+	max-height: 100px;
+}
+
+.order {
+	padding: 8px 7px;
+	border-radius: 10px;
+	background-color: #BABABA;
+}
+
+.order-left {
+	margin-top: 25px;
+}
+
+.order-left a {
+	padding: 8px 7px;
+	border-radius: 10px;
+	background-color: #BABABA;
+}
+
+
+
+/************************************************************* SOC BUTTONS  ***********************************************/
+
+.soc_buttons {
+
+}
+
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  991 *******************************************************/
+
+@media(max-width: 991px) {
+
+	nav .form-search button {
+		position: relative;
+		top: -15px;
+	}
+
+
+}
+
