@@ -14,11 +14,18 @@ a:hover {
 body {
 	font-size: 14px;
 	line-height: 1.5;
-	padding: 0 20px 0 20px;
 }
 
 a:link { 
 	text-decoration: none;
+}
+
+a:hover {
+	color: #E814EC;
+}
+
+a {
+	transition: 0.5s;
 }
 
 :focus {
@@ -33,9 +40,9 @@ a:link {
 	padding-left: 0;
 }
 
-/*****************************************************  HEADER    ***********************************************/
+/*******************************************************  HEADER    ***********************************************/
 
-/***************************************************     TOP BLOCK     ******************************************/
+/***************************************************     TOP BLOCK     ********************************************/
 
 header {
 	padding: 20px 0 15px 0;
@@ -53,10 +60,26 @@ header ul li a {
 	padding-right: 5px;
 }
 
+.list-inline img {
+	max-width: 30px;
+}
+
+.list-inline a {
+	transition: 0.5s;
+}
+
+.fa-phone:hover,
+.fa-envelope:hover,
+.fa-lock:hover {
+	color: #E814EC;
+}
+
+
+
 
 /***************************************************** LOGO  **************************************************/
 
-.logo  h1 a{
+.logo  h1 a {
 	font-size: 2em;
 	color: #E814EC;
 	font-family: ballpark;
@@ -261,7 +284,6 @@ nav a:hover {
 }
 
 .big-foto .mask {
-	/*background-image: url(../images/blouse3.png);*/
 	transition: all 0.5s linear;
 	opacity: 0;
 }
@@ -275,17 +297,23 @@ nav a:hover {
 	opacity: 1;
 }
 
+/************************************************************* MORE  ***********************************************/
+
 .more {
-	margin-left: 30px;
-	margin-right: 30px;
+	margin: 0 30px 10px 30px;
 	border-bottom: 1px solid #D4D4D4;
 	border-top: 1px solid #D4D4D4;
 	padding: 30px 0;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .more a {
-	color: gray;
+	color: #199696;
+	transition: 0.5s;
+}
+
+.more a:hover {
+	color: #E814EC;
 }
 
 /************************************************************* SUBSCRIPTION  ***********************************************/
@@ -294,21 +322,20 @@ nav a:hover {
 	color: red;
 	line-height: 3;
 	background-color: #22CCCC;
-	border-radius: 20px;
 }
 
 .input-group {
-    max-width: 500px;
-    padding: 30px 0 0 0;
-    border-radius: 20px;
+	max-width: 500px;
+	padding: 30px 0 0 0;
+	border-radius: 20px;
 }
 
 .input-group button {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .input-group input {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 .subscription img {
@@ -319,7 +346,8 @@ nav a:hover {
 .order {
 	padding: 8px 7px;
 	border-radius: 10px;
-	background-color: #BABABA;
+	background-color: #EAEAEA;
+	transition: 0.5s;
 }
 
 .order-left {
@@ -329,16 +357,82 @@ nav a:hover {
 .order-left a {
 	padding: 8px 7px;
 	border-radius: 10px;
-	background-color: #BABABA;
+	background-color: #EAEAEA;
+	transition: 0.5s;
+}
+
+.order:hover,
+.order-left a:hover {
+	color: #E814EC;
+	background-color: white;
+}
+
+/************************************************************* FOOTER  ***********************************************/
+
+footer {
+	background-color: #F0F0F0;
+	padding: 0;
+	margin: 0;
+}
+
+.logo-footer h1 a {
+	font-size: 56px;
+	color: #22CCCC;
+	font-family: ballpark;
+	transition: 0.5s;
+}
+
+.logo-footer h1 {
+	margin-top: 40px;
+}
+
+.logo-footer h1 a:hover {
+	color: #E814EC;
+}
+
+footer .content ul li {
+	list-style: none;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer .widget {
+	margin: 30px 0 20px 0;
+	text-align: center;
+}
+
+footer .fa-vk {
+	width: 30px;
+	height: 30px; 
+	margin-right: 5px;
+	font-size: 16px;
+	color: #fff;
+	background: #B8B8B8;
+	border-radius: 50px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+footer .fa-vk:hover {
+	transition: .3s;
+	background: #0BD6E1;
+	color: #3262C9;
+}
+
+footer .fa-vk:not(:hover) {
+	transition: .5s;
+}
+
+.footer-bottom {
+	padding: 50px;
+	border-top: 1px solid #D4D4D4;
 }
 
 
 
 /************************************************************* SOC BUTTONS  ***********************************************/
-
-.soc_buttons {
-
-}
 
 
 /************************************************************* @MEDIA QUERIES  ***********************************************/
@@ -351,6 +445,179 @@ nav a:hover {
 		top: -15px;
 	}
 
+	.input-group {
+	    left: 140px;
+    }
+
 
 }
 
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  670 *******************************************************/
+
+@media(max-width: 670px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 70px;
+	}
+
+	.input-group {
+	    left: 90px;
+    }
+
+}
+
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  651 *******************************************************/
+
+@media(max-width: 651px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 60px;
+	}
+
+	.input-group {
+	    left: 30px;
+    }
+
+}
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  640 *******************************************************/
+
+@media(max-width: 640px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 45px;
+	}
+
+
+	.input-group {
+	    left: 0;
+    }
+
+}
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  610 *******************************************************/
+
+@media(max-width: 610px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 30px;
+	}
+
+}
+
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  580 *******************************************************/
+
+@media(max-width: 580px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 20px;
+	}
+
+}
+
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  535 *******************************************************/
+
+@media(max-width: 535px) {
+
+	.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+		left: 0px;
+	}
+
+}
+
+
+
+
+
+/**************************************************************************************************************************/
+/**************   STOCK.HTML  *****************************    STOCK.HTML  *****************   STOCK.HTML  ***************/
+/**************************************************************************************************************************/
+
+/*************************************************************  GALLERY  ************************************************/
+
+.gallery {
+	display: inline-block;
+	width: 270px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+
+.gallery .stock, .gallery .content {
+	width: 270px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0
+}
+
+.gallery img {
+	width: 250px;
+	position: relative
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+
+.gallery p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	padding: 10px 0 5px 10px;
+}
+
+.gallery a {
+	display: inline-block
+	text-transform: uppercase;
+	position: relative;
+	color: #24BAE6;
+	transition: all 0.5s linear;
+	opacity: 0;
+	top: -50px;
+	text-decoration: none;
+	padding: 7px 14px;
+	color: #fff;
+	box-shadow: 0 0 1px #000;
+}
+
+.gallery a.info {
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background: linear-gradient(to bottom right, #BDBDBD 20%, #969696 76%, #AEAEAE 100%);
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #000
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.5s linear;
+	border-radius: 10px;
+}
+
+.gallery a.info:hover {
+	box-shadow: 0 0 5px #000;
+}
+
+.gallery .stock {
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.gallery:hover .stock{
+	opacity: 1;
+}
+
+.gallery:hover a.info {
+	transform: scale(1);
+	opacity: 1;
+}
