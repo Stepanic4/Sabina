@@ -74,8 +74,33 @@ header ul li a {
 	color: #E814EC;
 }
 
+.modal-content {
+	width: 80%;
+	height: 270px;
+	top: 70px;
+	padding: 5px 0 0 20px;
+	position: absolute;
+	background-color: #fff;
+}
 
+.btn-primary {
+	color: #338ECF;
+	background-color: #fff;
+	border: none;
+	transition: 0.5s;
+}
 
+.btn-primary:hover {
+	border: none;
+	background-color: #fff;
+	color: #E814EC;
+}
+
+.form-control {
+	max-width: 400px;
+	height: 34px;
+	color: black;
+}
 
 /***************************************************** LOGO  **************************************************/
 
@@ -96,6 +121,43 @@ header ul li a {
 }
 
 /***************************************************** NAV  **************************************************/
+
+ul.dropdown li { 
+	position: relative; 
+}
+
+ul.dropdown,
+ul.dropdown-inside {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul.dropdown-inside {
+	position: absolute;
+	left: -9999px;
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+	display: block;
+	width: 180px;
+	left: 0;
+	z-index: 1;
+}
+
+ul.dropdown .dropdown-inside { 
+	background: #E1E1E1; 
+	border-radius: 10px;
+}
+
+ul.dropdown .dropdown-inside li { 
+	padding: 10px;
+}
+
+ul.dropdown .dropdown-inside a:hover { 
+	padding: 5px 20px 5px 20px;
+	background: #efefef; 
+	border-radius: 5px;
+}
 
 
 nav a {
@@ -446,8 +508,8 @@ footer .fa-vk:not(:hover) {
 	}
 
 	.input-group {
-	    left: 140px;
-    }
+		left: 140px;
+	}
 
 
 }
@@ -463,8 +525,8 @@ footer .fa-vk:not(:hover) {
 	}
 
 	.input-group {
-	    left: 90px;
-    }
+		left: 90px;
+	}
 
 }
 
@@ -479,8 +541,8 @@ footer .fa-vk:not(:hover) {
 	}
 
 	.input-group {
-	    left: 30px;
-    }
+		left: 30px;
+	}
 
 }
 
@@ -495,8 +557,8 @@ footer .fa-vk:not(:hover) {
 
 
 	.input-group {
-	    left: 0;
-    }
+		left: 0;
+	}
 
 }
 
@@ -535,6 +597,17 @@ footer .fa-vk:not(:hover) {
 }
 
 
+/************************************************************* @MEDIA QUERIES  ***********************************************/
+/**************************************************************  435 *******************************************************/
+
+@media(max-width: 435px) {
+
+	.modal-content {
+		top: 40px;
+		padding: 5px;
+	}
+
+}
 
 
 
@@ -620,4 +693,14 @@ footer .fa-vk:not(:hover) {
 .gallery:hover a.info {
 	transform: scale(1);
 	opacity: 1;
+}
+
+
+/**************************************************************************************************************************/
+/**************   contacts.HTML  *****************************    CONTACTS.HTML  *****************   contacts.HTML  ***************/
+/**************************************************************************************************************************/
+
+.contacts {
+	border: 1px solid gray;
+	padding: 40px 5px;
 }

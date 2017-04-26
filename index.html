@@ -36,9 +36,30 @@
     						<ul class="list-inline">
     							<li><a href="tel:+30677688777"><i class="fa fa-phone"></i>+30677688777</a></li>
     							<li><a href="tel:+30507889007"><i class="fa fa-phone"></i>+30507889007</a></li>
-    							<li><a href="mailto:Sabina.EL@gmail.com"><img src="images/E-mail loading.gif">Sabina.EL@gmail.com</a></li>
-    							<li class="entry pull-right"><a href="/user/sign in"><i class="fa fa-lock"></i>Вход</a></li>
+    							<li><a href="mailto:Sabina.EL@gmail.com"><img src="source image/E-mail loading.gif">Sabina.EL@gmail.com</a></li>
+    							<li class="entry pull-right"><button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-lock"></i>Вход</button></li>
     						</ul>
+
+    						<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    							<div class="modal-dialog modal-lg">
+    								<div class="modal-content">
+    									<form>
+    										<div class="form-group">
+    											<label for="email">Email address:</label>
+    											<input type="email" class="form-control" id="email">
+    										</div>
+    										<div class="form-group">
+    											<label for="pwd">Password:</label>
+    											<input type="password" class="form-control" id="pwd">
+    										</div>
+    										<div class="checkbox">
+    											<label><input type="checkbox">Remember me</label>
+    										</div>
+    										<button type="submit" class="btn btn-default">Submit</button>
+    									</form>
+    								</div>
+    							</div>
+    						</div>
 
     					</div>
 
@@ -66,13 +87,29 @@
 
     			<div class="col-md-8">
 
-    				<ul class="list-inline  text-center">
+    				<ul class="dropdown list-inline text-center">
     					<li><a href="index.html">ГЛАВНАЯ</a></li>
     					<li><a href="stock.html">АКЦИИ</a></li>
-    					<li><a href="#">ЖЕНСКАЯ ОДЕЖДА</a></li>
-    					<li><a href="#">МУЖСКАЯ ОДЕЖДА</a></li>
-    					<li><a href="#">КОНТАКТЫ</a></li>
-    					<li><a href="#">О НАС</a></li>
+    					<li class="dropdown-top"><a class="dropdown-top" href="women.html">ЖЕНСКАЯ ОДЕЖДА</a>
+    						<ul class="dropdown-inside">
+    							<li><a href="#">Свитера</a></li>
+    							<li><a href="#">Юбки</a></li>
+    							<li><a href="#">Блузки</a></li>
+    							<li><a href="#">Пальто</a></li>
+    							<li><a href="#">Кардиганы</a></li>
+    						</ul>
+    					</li>
+    					<li class="dropdown-top"><a class="dropdown-top" href="male.html">МУЖСКАЯ ОДЕЖДА</a>
+    						<ul class="dropdown-inside">
+    							<li><a href="#">Куртки</a></li>
+    							<li><a href="#">Брюки</a></li>
+    							<li><a href="#">Туфли</a></li>
+    							<li><a href="#">Пальто</a></li>
+    							<li><a href="#">Кардиганы</a></li>
+    						</ul>
+    					</li>
+    					<li><a href="contacts.html">КОНТАКТЫ</a></li>
+    					<li><a href="history.html">О НАС</a></li>
     				</ul>
 
     			</div>
@@ -242,7 +279,7 @@
     				<p>Розничная цена:</br> 330 грн</p>
     			</div>
     			
-       </div>
+    		</div>
     	</div>
 
     	<div class="row text-center">
@@ -256,7 +293,7 @@
     	<div class="row subscription">
 
     		<div class="col-md-3 text-center order-left">
-    			<a href="#">ЗАКАЗАТЬ</a>
+    			<a href="#">НОВИНКИ</a>
     		</div>
 
     		<div class="col-lg-6">
@@ -270,7 +307,7 @@
 
     		<div class="col-md-3 text-center">
     			<a href="#" class="order">ОПТОВИКАМ</a>
-    			<img src="images/Optovik.gif" alt="Опт">
+    			<img src="source image/Optovik.gif" alt="Опт">
     		</div>
 
     	</div>
@@ -308,10 +345,10 @@
     					<h3 class="widget-title">ИНФОРМАЦИЯ</h3>
     					<div class="content">
     						<ul>
-    							<li><a href="#">О нас</a></li>
+    							<li><a href="history.html">О нас</a></li>
     							<li><a href="#">Оплата и доставка</a></li>
     							<li><a href="#">Сотрудничество</a></li>
-    							<li><a href="#">Контакты</a></li>
+    							<li><a href="contacts.html">Контакты</a></li>
     							<li><a href="#">Гарантия обмен</a></li>
     							<li><a href="https://vk.com/ges_odejda"><i class="fa fa-vk"></i>Мы в ВКОНТАКТЕ</a></li>
     						</ul>
@@ -357,7 +394,7 @@
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
     	<script src="js/bootstrap.min.js"></script>
 
-      <script src="js/custom-scripts.js"></script>
+    	<script src="js/custom-scripts.js"></script>
     	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 
