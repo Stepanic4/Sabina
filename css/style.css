@@ -622,6 +622,10 @@ footer .fa-vk:not(:hover) {
 		padding: 5px;
 	}
 
+	.btn-group-lg>.btn, .btn-lg {
+		padding: 10px 0;
+	}
+
 }
 
 
